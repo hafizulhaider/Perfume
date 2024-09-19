@@ -1,20 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./src/index.css">
-  <title>Vite App</title>
-</head>
-<body>
-  <h1 class="text-3xl font-bold underline bg-red-500">
-    Hello world!
-  </h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/index.css" />
 
+    <!--|| Favicon ||-->
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
 
+    <!--|| icon ||-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
 
-  <!-- Script -->
-  
-  <!-- <script type="module" src="/src/main.js"></script> -->
-</body>
+    <title>Perfume</title>
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header id="navbar" class="bg-bodyColor fixed w-full top-0 left-0 z-50">
+      <nav class="container flex justify-between items-center h-16 sm:h-20">
+        <div class="font-DancingScript text-2xl sm:text-5xl">perfume.</div>
+
+        <div
+          id="nav-menu"
+          class="bg-cardColor absolute top-0 left-[-100%] min-h-[80vh] w-full flex items-center justify-center duration-300 md:static md:min-h-fit md:w-auto md:bg-transparent"
+        >
+          <ul class="flex md:flex-row flex-col items-center gap-8">
+            <li>
+              <a href="#home" class="nav-link active">Home</a>
+            </li>
+            <li>
+              <a href="#collection" class="nav-link active">Collection</a>
+            </li>
+            <li>
+              <a href="#popular" class="nav-link">Popular</a>
+            </li>
+            <li>
+              <a href="#about" class="nav-link">About</a>
+            </li>
+          </ul>
+        </div>
+        <div class="text-xl sm:text-3xl cursor-pointer z-50 md:hidden">
+          <i class="ri-menu-2-line" id="hamburger"></i>
+        </div>
+      </nav>
+    </header>
+    <!-- Header End -->
+
+    <main>
+      <!-- Hero Section Start -->
+        <div id="hero">
+          <div>
+
+          </div>
+        </div>
+      <!-- Hero Section End -->
+
+      <!-- Collection Section start -->
+       <section id="collection">
+
+       </section>
+      <!-- Collection Section End -->
+    </main>
+
+    <!-- Script -->
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>
