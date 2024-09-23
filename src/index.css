@@ -4,6 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
+html{
+    @apply scroll-smooth overflow-x-hidden;
+}
+
 body{
     @apply bg-bodyColor font-Jost text-textColor tracking-wider overflow-x-hidden;
 }
@@ -13,16 +18,33 @@ section{
 }
 
 .nav-link{
-    @apply text-lg font-bold hover:text-titleColor duration-300
+    @apply text-lg font-bold hover:text-titleColor duration-300;
 }
 
 .active {
-    @apply text-titleColor
+    @apply text-titleColor;
 }
+
+
+.title{
+    @apply text-4xl font-bold inline-block font-DancingScript;
+}
+
+.subTitle{
+    @apply text-3xl md:text-4xl  lg:text-4xl font-bold;
+}
+
+.cardTitle{
+    @apply text-2xl md:text-3xl font-bold;
+}
+
+.cardTitle2{
+    @apply text-xl md:text-2xl xl:text-3xl font-bold;
+}
+
 .btn{
     @apply border text-lg lg:text-2xl font-bold px-5 py-3 duration-300
 }
-
 .btn:hover{
-    
+    @apply bg-titleColor
 }

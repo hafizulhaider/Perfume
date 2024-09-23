@@ -20,15 +20,15 @@
     <!-- Header Start -->
     <header id="navbar" class="bg-bodyColor fixed w-full top-0 left-0 z-50">
       <nav class="container flex justify-between items-center h-16 sm:h-20">
-        <div class="font-DancingScript text-2xl sm:text-5xl">perfume.</div>
+        <div  class="font-DancingScript text-2xl sm:text-5xl">perfume.</div>
 
         <div
           id="nav-menu"
           class="bg-cardColor absolute top-0 left-[-100%] min-h-[80vh] w-full flex items-center justify-center duration-300 md:static md:min-h-fit md:w-auto md:bg-transparent"
         >
-          <ul class="flex md:flex-row flex-col items-center gap-8">
+          <ul  class="flex md:flex-row flex-col items-center gap-8">
             <li>
-              <a href="#home" class="nav-link active">Home</a>
+              <a href="#hero" class="nav-link active">Home</a>
             </li>
             <li>
               <a href="#collection" class="nav-link">Collection</a>
@@ -50,12 +50,15 @@
 
     <main>
       <!-- Hero Section Start -->
-      <div id="hero" class="container relative mt-16 sm:mt-20 py-10 xl:min-h-screen">
+      <div
+        id="hero"
+        class="container relative mt-10 sm:mt-16 py-10 xl:min-h-screen"
+      >
         <div
           class="absolute top-[40%] sm:top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -z-10 md:top-[45%] lg:top-1/2"
         >
           <p
-            class="text-[124px] leading-none sm:text-[170px] font-black text-[#241826] opacity-50"
+            class="text-[124px] leading-none sm:text-[170px] xl:text-[240px] font-black text-[#241826] opacity-50"
           >
             FRA <br />
             GRA <br />
@@ -64,26 +67,28 @@
         </div>
 
         <div class="flex flex-col items-center">
-          <div
+          <div data-aos="fade-down"
             class="text-[45px] sm:text-[70px] md:text-[90px] lg:text-[120px] xl:text-[160px] font-bold uppercase"
           >
             Celestia.
           </div>
 
-          <div class="relative -mt-20 sm:-mt-28 md:-mt-36 xl:-mt-56">
-            <img
-              src="./assets/images/hero-image3.png"
+          <div class="relative -mt-16 sm:-mt-24 md:-mt-28 xl:-mt-44">
+            <img data-aos="fade-up"
+              src="./assets/images/hero.png"
               alt=""
               class="w-full mx-auto md:w-2/3 lg:w-1/2 xl:w-1/2"
             />
             <p
-              class="absolute bottom-[20%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full text-center text-5xl font-bold font-DancingScript xl:text-[65px]"
+              class="absolute bottom-[20%] w-full text-center text-4xl font-bold font-DancingScript xl:text-[56px]"
             >
               made of stardust
             </p>
           </div>
 
-          <div class="flex flex-col items-center w-full gap-5 md:justify-between md:gap-1 md:flex-row">
+          <div
+            class="flex flex-col items-center w-full gap-5 md:justify-between md:gap-1 md:flex-row"
+          >
             <p class="max-w-80">
               Celestia is a unique perfume, drawn from the rarest meteorites,
               and is the only one to be sourced from the stars.
@@ -91,7 +96,7 @@
 
             <a
               href="#_"
-              class="px-5 py-2.5 relative rounded group font-medium text-white font-medium inline-block"
+              class="px-5 py-2.5 relative rounded group font-medium text-white text-center inline-block"
             >
               <span
                 class="absolute top-0 left-0 w-full h-full rounded opacity-50 filter blur-sm bg-gradient-to-br from-purple-600 to-blue-500"
@@ -120,28 +125,353 @@
       <!-- Collection Section start -->
       <section id="collection" class="bg-secColor">
         <div class="container">
-          <div class="flex flex-col items-center gap-3 text-center mb-20 md:mb-28">
-            <h2 class="title text-titleColor">Collection</h2>
-            <p class="subTitle max-w-2xl">Things you need to know</p>
+          <div
+            class="flex flex-col items-center gap-3 text-center mb-20 md:mb-28"
+          >
+            <h2 data-aos="fade-down" class="title text-titleColor">Collection</h2>
+            <p data-aos="fade-up" class="subTitle max-w-2xl">Things you need to know</p>
           </div>
 
-          <div>
+          <div
+            class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-20 gap-x-8"
+          >
             <!-- Card number 1 -->
-             <div>
-              <img src="./assets/images/collection-1.png" alt="">
-              <div>
-                <h2>Real Stardust</h2>
-                <p>We’ve sourced the finest meteorites and have extracted the very essence of the universe.</p>
+            <div class="relative bg-cardColor rounded-xl px-10 py-20">
+              <img data-aos="zoom-in"
+                src="./assets/images/collection-1.png"
+                alt=""
+                class="w-40 absolute -top-20 left-0"
+              />
+
+              <div class="space-y-5">
+                <h2 class="cardTitle">Real Stardust</h2>
+                <p>
+                  We’ve sourced the finest meteorites and have extracted the
+                  very essence of the universe.
+                </p>
               </div>
 
-              <div>
-                <i class="ri-arrow-right-line"></i>
+              <div
+                class="bg-titleColor w-20 h-20 rounded-full flex items-center justify-center text-2xl border-8 border-secColor absolute -right-3 -bottom-3"
+              >
+                <i class="ri-arrow-right-line hover:scale-125 duration-300"></i>
               </div>
-             </div>
+            </div>
+            <!-- card number 2 -->
+            <div class="relative bg-cardColor rounded-xl px-10 py-20">
+              <img data-aos="zoom-in"
+                src="./assets/images/collection-2.png"
+                alt=""
+                class="w-40 absolute -top-20 left-0"
+              />
+
+              <div class="space-y-5">
+                <h2 class="cardTitle">Real Stardust</h2>
+                <p>
+                  We’ve sourced the finest meteorites and have extracted the
+                  very essence of the universe.
+                </p>
+              </div>
+
+              <div
+                class="bg-titleColor w-20 h-20 rounded-full flex items-center justify-center text-2xl border-8 border-secColor absolute -right-3 -bottom-3"
+              >
+                <i class="ri-arrow-right-line hover:scale-125 duration-300"></i>
+              </div>
+            </div>
+            <!-- card number 3 -->
+            <div class="relative bg-cardColor rounded-xl px-10 py-20">
+              <img data-aos="zoom-in"
+                src="./assets/images/collection-3.png"
+                alt=""
+                class="w-40 absolute -top-20 left-0"
+              />
+
+              <div class="space-y-5">
+                <h2 class="cardTitle">Real Stardust</h2>
+                <p>
+                  We’ve sourced the finest meteorites and have extracted the
+                  very essence of the universe.
+                </p>
+              </div>
+
+              <div
+                class="bg-titleColor w-20 h-20 rounded-full flex items-center justify-center text-2xl border-8 border-secColor absolute -right-3 -bottom-3"
+              >
+                <i class="ri-arrow-right-line hover:scale-125 duration-300"></i>
+              </div>
+            </div>
           </div>
         </div>
       </section>
       <!-- Collection Section End -->
+
+      <!-- Popular Section Start -->
+      <section  id="popular">
+        <div class="container">
+          <div
+            class="flex flex-col items-center gap-3 text-center mb-20 md:mb-28"
+          >
+            <h2 data-aos="fade-down" class="title text-titleColor">Popular</h2>
+            <p data-aos="fade-up" class="subTitle max-w-2xl">Things you need to know</p>
+          </div>
+
+          <div class="flex flex-col md:flex-row items-center gap-5 lg:gap-10">
+            <!-- Card Number 1 -->
+            <div data-aos="zoom-in"
+              class="bg-cardColor w-full py-5 px-3 md:py-8 md:px-10 xl:py-10 xl:px-12 flex justify-between items-center md:w-1/2"
+            >
+              <div class="w-3/5">
+                <div class="max-w-56 xl:max-w-full">
+                  <p class="text-xs xl:text-base pb-2">TOP STAFF PICK</p>
+                  <p class="cardTitle2">Best Collection</p>
+                  <div class="my3 md:my-5">
+                    Use code: LIGHTCODE Get <br />
+                    25% Off for all items!
+                  </div>
+                  <a
+                    href="#"
+                    class="mt-5 px-5 py-2.5 relative rounded group font-medium text-white inline-block"
+                  >
+                    <span
+                      class="absolute top-0 left-0 w-full h-full rounded opacity-50 filter blur-sm bg-gradient-to-br from-purple-600 to-blue-500"
+                    ></span>
+                    <span
+                      class="h-full w-full inset-0 absolute mt-0.5 ml-0.5 bg-gradient-to-br filter group-active:opacity-0 rounded opacity-50 from-purple-600 to-blue-500"
+                    ></span>
+                    <span
+                      class="absolute inset-0 w-full h-full transition-all duration-200 ease-out rounded shadow-xl bg-gradient-to-br filter group-active:opacity-0 group-hover:blur-sm from-purple-600 to-blue-500"
+                    ></span>
+                    <span
+                      class="absolute inset-0 w-full h-full transition duration-300 ease-out rounded bg-gradient-to-br to-purple-600 from-blue-500"
+                    ></span>
+                    <span class="relative">Shop Now</span>
+                  </a>
+                </div>
+              </div>
+              <div class="w-2/5">
+                <img
+                  src="./assets/images/popular-1.png"
+                  alt=""
+                  class="mx-auto w-full"
+                />
+              </div>
+            </div>
+
+            <!-- Card Number 2 -->
+            <div data-aos="zoom-in"
+              class="bg-cardColor w-full py-5 px-3 md:py-8 md:px-10 xl:py-10 xl:px-12 flex justify-between items-center md:w-1/2"
+            >
+              <div class="w-3/5">
+                <div class="max-w-56 xl:max-w-full">
+                  <p class="text-xs xl:text-base pb-2">TOP STAFF PICK</p>
+                  <p class="cardTitle2">Best Collection</p>
+                  <div class="my3 md:my-5">
+                    Use code: LIGHTCODE Get <br />
+                    25% Off for all items!
+                  </div>
+                  <a
+                    href="#"
+                    class="mt-5 px-5 py-2.5 relative rounded group font-medium text-white inline-block"
+                  >
+                    <span
+                      class="absolute top-0 left-0 w-full h-full rounded opacity-50 filter blur-sm bg-gradient-to-br from-purple-600 to-blue-500"
+                    ></span>
+                    <span
+                      class="h-full w-full inset-0 absolute mt-0.5 ml-0.5 bg-gradient-to-br filter group-active:opacity-0 rounded opacity-50 from-purple-600 to-blue-500"
+                    ></span>
+                    <span
+                      class="absolute inset-0 w-full h-full transition-all duration-200 ease-out rounded shadow-xl bg-gradient-to-br filter group-active:opacity-0 group-hover:blur-sm from-purple-600 to-blue-500"
+                    ></span>
+                    <span
+                      class="absolute inset-0 w-full h-full transition duration-300 ease-out rounded bg-gradient-to-br to-purple-600 from-blue-500"
+                    ></span>
+                    <span class="relative">Shop Now</span>
+                  </a>
+                </div>
+              </div>
+              <div class="w-2/5">
+                <img
+                  src="./assets/images/popular-2.png"
+                  alt=""
+                  class="mx-auto w-full"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Banner Card -->
+          <div data-aos="fade-up"
+            class="bg-cardColor text-center mt-5 lg:mt10 py-10 px-3 bg-cover bg-center"
+            style="
+              background-image: linear-gradient(to right, #33003390, #330033),
+                url('assets/images/popular_banner.jpg');
+            "
+          >
+            <div class="sm:max-w-72 mx-auto">
+              <p class="cardTitle2">Collection Arrived</p>
+              <p class="my-3 md:my-5">
+                You have no items & Are you ready to use? come & shop with us!
+              </p>
+              <p>Price from: <span class="text-2xl font-bold">$45.00</span></p>
+              <a
+                href="#"
+                class="mt-10 px-5 py-2.5 relative rounded group font-medium text-white inline-block"
+              >
+                <span
+                  class="absolute top-0 left-0 w-full h-full rounded opacity-50 filter blur-sm bg-gradient-to-br from-purple-600 to-blue-500"
+                ></span>
+                <span
+                  class="h-full w-full inset-0 absolute mt-0.5 ml-0.5 bg-gradient-to-br filter group-active:opacity-0 rounded opacity-50 from-purple-600 to-blue-500"
+                ></span>
+                <span
+                  class="absolute inset-0 w-full h-full transition-all duration-200 ease-out rounded shadow-xl bg-gradient-to-br filter group-active:opacity-0 group-hover:blur-sm from-purple-600 to-blue-500"
+                ></span>
+                <span
+                  class="absolute inset-0 w-full h-full transition duration-300 ease-out rounded bg-gradient-to-br to-purple-600 from-blue-500"
+                ></span>
+                <span class="relative">Shop Now</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- popular Section End -->
+
+      <!-- Banner Section star -->
+      <section class="bg-cardColor">
+        <div class="container">
+          <div class="flex flex-col lg:flex-row justify-between gap-10">
+            <!-- Item 1 -->
+            <div class="flex-1 flex gap-5 max-w-md">
+              <div class="text-5xl">
+                <i data-aos="fade-up" class="ri-plane-line"></i>
+              </div>
+
+              <div class="space-y-4">
+                <p class="uppercase font-bold">EU Free Delivery</p>
+                <p class="leading-relaxed">
+                  Free Delivery on all order from EU with price more than $90.00
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="flex-1 flex gap-5 max-w-md">
+              <div class="text-5xl">
+                <i data-aos="fade-up" class="ri-arrow-go-back-line"></i>
+              </div>
+
+              <div class="space-y-4">
+                <p class="uppercase font-bold">Money Guarantee</p>
+                <p class="leading-relaxed">
+                  30 Days money back guarantee no question asked!
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="flex-1 flex gap-5 max-w-md">
+              <div class="text-5xl">
+                <i data-aos="fade-up" class="ri-lock-2-line"></i>
+              </div>
+
+              <div class="space-y-4">
+                <p class="uppercase font-bold">Online Support 24/7</p>
+                <p class="leading-relaxed">
+                  We’re here to support to you. Let’s shopping now!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Banner Section end -->
+
+      <!-- About Section Start -->
+      <section id="about" class="bg-secColor">
+        <div class="container">
+          <div
+            class="flex flex-col items-center gap-3 text-center mb-20 md:mb-28"
+          >
+            <h2 data-aos="fade-down" class="title text-titleColor">About Celestia</h2>
+            <p data-aos="fade-up" class="subTitle max-w-2xl">Things you need to know</p>
+          </div>
+
+          <div
+            class="flex flex-col md:flex-row items-start xl:items-center gap-5 lg:gap-10 mt-20"
+          >
+            <div data-aos="fade-right" class="w-full md:w-1/2">
+              <img src="./assets/images/about.png" alt="" />
+            </div>
+
+            <div class="w-full md:w-1/2">
+              <div data-aos="fade-left">
+                <p class="text-xs xl:text-base">TOP STAFF PICK</p>
+                <p class="cardTitle2">Best Collection</p>
+                <p class="mt-3 md:mt-5">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Natus magnam, consequuntur atque, deserunt commodi eos et
+                  dolores totam repudiandae incidunt mollitia quis neque
+                  consectetur dolorum aut officiis blanditiis, maxime saepe.
+                </p>
+                <br />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Natus magnam, consequuntur atque, deserunt commodi
+                </p>
+                <a
+                  href="#"
+                  class="mt-5 lg:mt-10 px-5 py-2.5 relative rounded group font-medium text-white inline-block"
+                >
+                  <span
+                    class="absolute top-0 left-0 w-full h-full rounded opacity-50 filter blur-sm bg-gradient-to-br from-purple-600 to-blue-500"
+                  ></span>
+                  <span
+                    class="h-full w-full inset-0 absolute mt-0.5 ml-0.5 bg-gradient-to-br filter group-active:opacity-0 rounded opacity-50 from-purple-600 to-blue-500"
+                  ></span>
+                  <span
+                    class="absolute inset-0 w-full h-full transition-all duration-200 ease-out rounded shadow-xl bg-gradient-to-br filter group-active:opacity-0 group-hover:blur-sm from-purple-600 to-blue-500"
+                  ></span>
+                  <span
+                    class="absolute inset-0 w-full h-full transition duration-300 ease-out rounded bg-gradient-to-br to-purple-600 from-blue-500"
+                  ></span>
+                  <span class="relative">Shop Now</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About Section End -->
+
+      <!-- Footer -->
+      <footer class="container py-10">
+        <div class="flex flex-col md:flex-row items-center gap-8">
+          <div class="w-full md:w-1/2">
+              <p class="cardTitle">Newsletter</p>
+              <p>Sign up for our free video course and urban garden inspiration</p>
+          </div>
+
+            <div class="w-full md:w-1/2">
+              <div class="flex flex-col md:flex-row gap-1">
+                <input type="email" placeholder="Your email letter"
+                class="w-full px-5 py-3 text-bodyColor outline-none">
+                <button class="btn">Subscribe</button>
+              </div>
+            </div>
+          </div>
+
+          <p class="text-center mt-10 opacity-50">Copyright &copy; 2024 Hafizul Haider. All Right Reserved.</p>
+      </footer>
+
+
+<!-- Scroll Up Button -->
+
+<a href="#" id="scroll-up" class="fixed right-10 -bottom-1/2 bg-titleColor px-2 py-1 md:px-4 md:py-2 rounded-sm text-xs md:text-lg z-50 hover:-translate-y-1 ease-in duration-300">
+  <i class="ri-arrow-up-line"></i>
+</a>
+
     </main>
 
     <!-- Script -->
